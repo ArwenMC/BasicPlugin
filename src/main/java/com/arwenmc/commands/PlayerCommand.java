@@ -21,11 +21,11 @@ public class PlayerCommand implements CommandExecutor {
             return true;
         } else {
             Player player = (Player) commandSender;
-            if (player.hasPermission(plugin.BP_ADMIN)) {
-                player.sendMessage(ChatColor.GREEN + "You are an admin and had permission to use this admin section.");
+            if (player.hasPermission(plugin.BP_USER)) {
+                player.sendMessage(ChatColor.GREEN + "You are a player and had permission to use this admin section.");
                 return true;
             } else {
-                player.sendMessage(ChatColor.GREEN + "You are a player and were able to use this command.");
+                player.sendMessage(ChatColor.GREEN + "You are a default and were able to use this command.");
                 player.sendMessage(plugin.NO_PERMISSION);
                 return true;
             }

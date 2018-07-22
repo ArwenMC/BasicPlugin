@@ -33,6 +33,7 @@ public class TabCompleteCommand implements CommandExecutor, TabExecutor {
         List<String> listZero = Arrays.asList("I", "You", "We", "He", "She", "They");
         List<String> listOne = Arrays.asList("love", "hate", "eat", "throw");
         List<String> listTwo = Arrays.asList("bacon", "ball", "you", "her");
+        // this can extended to how many subcommands that are required but I felt three enough
         List<String> listFinal = Lists.newArrayList();
 
         switch (args.length) {
