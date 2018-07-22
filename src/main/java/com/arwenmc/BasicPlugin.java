@@ -37,7 +37,7 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
 
     public void updateConfig() {
         this.NOT_PLAYER = GAC("general.not_player");
-        this.NO_PERMISSION = NO_PERMISSION = GAC("general.no_permission");
+        this.NO_PERMISSION = GAC("general.no_permission");
     }
 
 }
