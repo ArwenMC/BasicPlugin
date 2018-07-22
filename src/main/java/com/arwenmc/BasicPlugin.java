@@ -27,6 +27,10 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
 
     }
 
-
+    private String GAC(String path) { // Get And Colour - a function that gets config values and colourises them.
+        String configValue = this.getConfig().getString(path);
+        String coloredValue = ChatColor.translateAlternateColorCodes('&', configValue);
+        return coloredValue;
+    }
 
 }
