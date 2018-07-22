@@ -45,7 +45,7 @@ public class BasicPluginCommand implements CommandExecutor, TabExecutor {
                 for (String s : listZero) {
                     if (s.startsWith(args[0])) listFinal.add(s);
                 }
-                return listFinal
+                return listFinal;
         }
 
         return null;
