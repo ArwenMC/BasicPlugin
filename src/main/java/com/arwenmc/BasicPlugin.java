@@ -9,8 +9,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class BasicPlugin extends JavaPlugin { // The main plugin class should always have the same name as the project and never be called Main.
 
-    public String NOT_PLAYER = ChatColor.RED + "You must be a player in order to use this command."; // Either hardcoded or get from config.
-    public String NO_PERMISSION = ChatColor.RED + "You do not have permission to use this command.";
+    public String NOT_PLAYER = GAC("general.not_player"); // Either hardcoded or get from config.
+    public String NO_PERMISSION = GAC("general.no_permission");
 
     public Permission BP_ADMIN = new Permission("bp.admin"); // easily change the node here without changing the variable.
     public Permission BP_USER = new Permission("bp.user"); // the user permission
