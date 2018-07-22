@@ -18,10 +18,14 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
 
     @Override
     public void onEnable() {
+        this.getLogger().info("Enabling " + getDescription().getName() + " at version: " + getDescription().getVersion());
+
         getCommand("basiccommand").setExecutor(new BasicCommand(this));
         getCommand("playercommand").setExecutor(new PlayerCommand(this));
         getCommand("tabcomplete").setTabCompleter(new TabCompleteCommand(this));
         getCommand("basicplugin").setTabCompleter(new BasicPluginCommand(this));
+
+        this.getLogger().info("Enabled " + getDescription().getName() + " at version: " + getDescription().getVersion());
     }
 
     @Override
