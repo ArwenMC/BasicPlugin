@@ -8,3 +8,9 @@ commands:
     usage: /basiccommand
     description: A sample command to illstrate our style guide
     alias: [bc]
+  playercommand:
+    usage: /playercommand
+    description: A command that only a player can use, with the permission.
+  tabcomplete:
+    usage: /tabcomplete <arg0> <arg1> <arg2>
+    description: An example of tab complete.

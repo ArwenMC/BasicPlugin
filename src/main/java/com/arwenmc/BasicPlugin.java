@@ -2,6 +2,7 @@ package com.arwenmc;
 
 import com.arwenmc.commands.BasicCommand;
 import com.arwenmc.commands.PlayerCommand;
+import com.arwenmc.commands.TabCompleteCommand;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -17,6 +18,7 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
     public void onEnable() {
         getCommand("basiccommand").setExecutor(new BasicCommand(this));
         getCommand("playercommand").setExecutor(new PlayerCommand(this));
+        getCommand("tabcomplete").setTabCompleter(new TabCompleteCommand(this));
     }
 
     @Override
