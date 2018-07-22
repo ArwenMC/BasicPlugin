@@ -12,7 +12,7 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
     public String NOT_PLAYER = ChatColor.RED + "You must be a player in order to use this command."; // Either hardcoded or get from config.
     public String NO_PERMISSION = ChatColor.RED + "You do not have permission to use this command.";
 
-    public Permission BP_ADMIN = new Permission("bp.admin");
+    public Permission BP_ADMIN = new Permission("bp.admin"); // easily change the node here without changing the variable.
 
     @Override
     public void onEnable() {

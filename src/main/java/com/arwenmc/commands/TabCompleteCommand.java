@@ -25,9 +25,7 @@ public class TabCompleteCommand implements CommandExecutor, TabExecutor {
             sb.append(arg).append(" ");
         }
         commandSender.sendMessage(ChatColor.GREEN + sb.toString());
-
-
-        return false;
+        return true;
     }
 
     @Override
@@ -42,16 +40,18 @@ public class TabCompleteCommand implements CommandExecutor, TabExecutor {
                 for (String s : listZero) {
                     if (s.startsWith(args[0])) listFinal.add(s);
                 }
+                return listFinal;
             case 2:
                 for (String s : listOne) {
-                    if (s.startsWith(args[0])) listFinal.add(s);
+                    if (s.startsWith(args[1])) listFinal.add(s);
                 }
+                return listFinal;
             case 3:
                 for (String s : listTwo) {
-                    if (s.startsWith(args[0])) listFinal.add(s);
+                    if (s.startsWith(args[2])) listFinal.add(s);
                 }
+                return listFinal;
         }
-
-        return listFinal;
+        return null;
     }
 }
