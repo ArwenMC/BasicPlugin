@@ -1,0 +1,10 @@
+name: BasicPlugin
+version: 1.0 # Try and match the maven version.
+main: com.arwenmc.BasicPlugin
+author: ArwenMC
+authors: ["FirstName LastName"]
+commands:
+  basiccommand:
+    usage: /basiccommand
+    description: A sample command to illstrate our style guide
+    alias: [bc]

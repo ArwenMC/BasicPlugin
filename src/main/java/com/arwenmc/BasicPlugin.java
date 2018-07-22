@@ -6,7 +6,7 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
 
     @Override
     public void onEnable() {
-        
+
     }
 
     @Override
