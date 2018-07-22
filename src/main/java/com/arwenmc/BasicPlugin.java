@@ -1,6 +1,7 @@
 package com.arwenmc;
 
 import com.arwenmc.commands.BasicCommand;
+import com.arwenmc.commands.BasicPluginCommand;
 import com.arwenmc.commands.PlayerCommand;
 import com.arwenmc.commands.TabCompleteCommand;
 import net.md_5.bungee.api.ChatColor;
@@ -20,6 +21,7 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
         getCommand("basiccommand").setExecutor(new BasicCommand(this));
         getCommand("playercommand").setExecutor(new PlayerCommand(this));
         getCommand("tabcomplete").setTabCompleter(new TabCompleteCommand(this));
+        getCommand("basicplugin").setTabCompleter(new BasicPluginCommand(this));
     }
 
     @Override
@@ -31,6 +33,11 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
         String configValue = this.getConfig().getString(path);
         String coloredValue = ChatColor.translateAlternateColorCodes('&', configValue);
         return coloredValue;
+    }
+
+    public void updateConfig() {
+        this.NOT_PLAYER = GAC("general.not_player");
+        this.NO_PERMISSION = NO_PERMISSION = GAC("general.no_permission");
     }
 
 }

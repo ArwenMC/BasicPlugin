@@ -14,3 +14,6 @@ commands:
   tabcomplete:
     usage: /tabcomplete <arg0> <arg1> <arg2>
     description: An example of tab complete.
+  basicplugin:
+    usage: /basicplugin <reload>
+    description: A util command that can reload the config.
