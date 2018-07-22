@@ -1,0 +1,5 @@
+# Basic Plugin
+# Written by ArwenMC
+general:
+  not_player: "&cYou must be a player to use this command"
+  no_permission: "&cYou do not have permission to use this command"
