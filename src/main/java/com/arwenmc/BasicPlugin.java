@@ -13,6 +13,7 @@ public class BasicPlugin extends JavaPlugin { // The main plugin class should al
     public String NO_PERMISSION = ChatColor.RED + "You do not have permission to use this command.";
 
     public Permission BP_ADMIN = new Permission("bp.admin"); // easily change the node here without changing the variable.
+    public Permission BP_USER = new Permission("bp.user"); // the user permission
 
     @Override
     public void onEnable() {
